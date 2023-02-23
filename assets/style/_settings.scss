@@ -16,23 +16,19 @@
   $font1: allura, sans-serif;
   $font2: poppins, serif;
   $font3: roboto, serif;
-  $black1: rgb(17, 17, 17);
+  $black1: rgb(33, 32, 30);
   $white1: rgb(243, 243, 243);
-  $grey1: rgb(209, 209, 209);
+  $orange: rgb(166, 114, 69);
   $grey2: rgb(233, 233, 233);
-  $grey3: rgb(105, 105, 105);
-  
-  @mixin title {
-    font-family: $font1;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-  }
+  $grey3: rgb(105, 105, 105);  
   
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
+
   html {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth;    
+    
   }

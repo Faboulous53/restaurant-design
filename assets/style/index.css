@@ -19,4 +19,10 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+header {
+  background: url(../../img/bg-slider-06.jpg) cover/center no-repeat;
+  width: 100vh;
+  height: 100vh;
 }/*# sourceMappingURL=index.css.map */
