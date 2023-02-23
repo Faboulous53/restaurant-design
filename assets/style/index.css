@@ -1,3 +1,22 @@
-body {
-  background: rgb(93, 91, 91);
+@font-face {
+  font-family: "allura";
+  src: url(../style/fonts/Allura-Regular.ttf);
+}
+@font-face {
+  font-family: "poppins";
+  src: url(../style/fonts/Poppins-Medium.ttf);
+}
+@font-face {
+  font-family: "roboto";
+  src: url(../style/fonts/Roboto-Light.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }/*# sourceMappingURL=index.css.map */
