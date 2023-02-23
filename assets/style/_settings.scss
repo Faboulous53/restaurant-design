@@ -28,7 +28,16 @@
     box-sizing: border-box;
   }
 
+  li {
+    list-style-type: none;
+  }
+
   html {
     scroll-behavior: smooth;    
     
+  }
+
+  body{
+    font-family: $font3;
+    background: $black1;
   }

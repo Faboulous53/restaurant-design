@@ -1,5 +1,102 @@
-header{
-    background: url(../../img/bg-slider-06.jpg) cover/center no-repeat;
-    width: 100vh;
-    height: 100vh;
+header{       
+    background: url(../img/bg-slider-06.jpg) center/cover;       
+    color: $white1;   
+    padding: 0 50px;
+    
+
+
+nav {
+    padding: 40px 0;
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 10vh;
+
+    h3{
+        font-family: $font1;
+        font-size: 3rem;
+    }
+
+    .link{
+        display: flex;
+        justify-content: space-around;
+
+        li{
+            padding: 0 40px;
+            text-transform: uppercase;
+            font-family: $font3;
+            font-size: 0.9rem;
+            font-weight: bold;
+            transition: 1s ease-in-out;
+            cursor: pointer;
+
+                &:hover{
+                    color: $orange;                                       
+                    background: $white1;
+                    border-radius: 10px;
+                }
+        }
+    }
+
+   .social{
+        display: flex;
+        li{
+            padding: 0 10px;
+            transition: 1s ease-in-out;
+            cursor: pointer;
+
+            &:hover{
+                color: $orange;                                   
+                background: $white1;
+                border-radius: 10px;
+            }
+        }
+    } 
+
+}
+
+
+.home{
+    margin-top: 15% ;
+    height: 80vh;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+    span{
+        font-family: $font1;
+        font-size: 4rem;
+        color: $orange;
+        margin:0;
+        line-height: 0;
+    }
+
+   h1{
+        font-family: $font2;
+        text-transform: uppercase;
+        font-size: 5rem;
+        letter-spacing: 1rem;
+        margin:0;
+    }
+
+    img{
+        margin: 40px 0;
+        width: 2%;
+        image-rendering: crisp-edges;
+    }
+
+    p{
+        font-family: $font3;
+        text-transform: uppercase;
+        letter-spacing: 0.6rem;
+    }
+
+   
+
+
+}
+
 }
