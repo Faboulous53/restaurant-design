@@ -55,7 +55,7 @@
 }
 
 .menu{
-
+    position: relative;
 
     .head-menu{
         width: 50%;
@@ -90,10 +90,18 @@
                 color: rgb(205, 204, 204);
                 font-weight: 500;
                 cursor: pointer;
-                position: relative; 
+                position: relative;
+                transform: rotate(5deg); 
+                transition: 1s ease-in-out;
+                
+                &:hover{
+                    color: $orange;
+                }                
 
                 &:hover:after{
+                    
                     content: " ";
+                    color: $orange;
                     position: absolute;
                     bottom: 0;
                     left: 0;
@@ -101,9 +109,44 @@
                     height: 2px;
                     background: rgb(205, 204, 204);
                     transform: translateX(50%);
+                    
                 }
                 
             }
         }
+    }
+
+    .decription-menu{
+        background: white;
+        margin-top: 50px;
+        border-top: 4px solid $orange;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        
+    }
+
+    .description{
+        display: grid;
+        grid-template-columns:30% 60% 10%;
+        margin: 20px;
+        padding: 20px;                
+        border-bottom: 1px dashed grey;
+        align-items: center;
+       
+        .price{
+            font-family: $font3;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: $orange;
+        }
+        
+        
+    }
+    &:after{
+        content: "";
+        position: absolute;
+        background: url(../img/bg-menu-01.jpg) center/cover;
+        bottom: 0;
+
     }
 }

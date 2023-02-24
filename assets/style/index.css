@@ -193,6 +193,9 @@ header .home p {
   background: url(../img/store-01.jpg) center/cover;
 }
 
+.menu {
+  position: relative;
+}
 .menu .head-menu {
   width: 50%;
   margin: 80px auto;
@@ -233,9 +236,19 @@ header .home p {
   font-weight: 500;
   cursor: pointer;
   position: relative;
+  -webkit-transform: rotate(5deg);
+      -ms-transform: rotate(5deg);
+          transform: rotate(5deg);
+  -webkit-transition: 1s ease-in-out;
+  -o-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+}
+.menu .nav-menu ul li:hover {
+  color: rgb(166, 114, 69);
 }
 .menu .nav-menu ul li:hover:after {
   content: " ";
+  color: rgb(166, 114, 69);
   position: absolute;
   bottom: 0;
   left: 0;
@@ -245,4 +258,33 @@ header .home p {
   -webkit-transform: translateX(50%);
       -ms-transform: translateX(50%);
           transform: translateX(50%);
+}
+.menu .decription-menu {
+  background: white;
+  margin-top: 50px;
+  border-top: 4px solid rgb(166, 114, 69);
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.menu .description {
+  display: grid;
+  grid-template-columns: 30% 60% 10%;
+  margin: 20px;
+  padding: 20px;
+  border-bottom: 1px dashed grey;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.menu .description .price {
+  font-family: roboto, serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: rgb(166, 114, 69);
+}
+.menu:after {
+  content: "";
+  position: absolute;
+  background: url(../img/bg-menu-01.jpg) center/cover;
+  bottom: 0;
 }/*# sourceMappingURL=index.css.map */
