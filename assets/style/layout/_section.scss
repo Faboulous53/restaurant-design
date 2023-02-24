@@ -160,7 +160,7 @@
         .opening {
             padding: 20px;
             margin: 10px;
-            
+
             border: dashed 1px white;
             display: flex;
             flex-direction: column;
@@ -175,45 +175,42 @@
                 font-size: 2rem;
                 padding: 0;
                 margin: 0;
-                
             }
-            h2{
+            h2 {
                 text-transform: uppercase;
                 margin: -10px 0 20px 0;
                 font-size: 1.2rem;
-                animation: changeColor 3s infinite;                
+                animation: changeColor 3s infinite;
             }
             @keyframes changeColor {
-                0%{
+                0% {
                     color: white;
                 }
-                30%{
+                30% {
                     color: $orange;
                 }
-                70%{
+                70% {
                     color: $orange;
-                }                
+                }
             }
-            img{
+            img {
                 margin-bottom: 20px;
             }
-            h3{
+            h3 {
                 color: $orange;
                 text-transform: uppercase;
                 font-family: $font2;
                 font-weight: 300;
                 margin-bottom: 20px;
             }
-            p{
+            p {
                 font-family: $font2;
                 font-size: 0.8rem;
                 margin-bottom: 20px;
             }
         }
 
-       
-
-        .reservation-right{
+        .reservation-right {
             background: $white1;
             color: black;
             display: flex;
@@ -221,7 +218,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            gap: 50px;
+            gap: 10px;
 
             span {
                 color: $orange;
@@ -229,39 +226,41 @@
                 font-size: 2rem;
                 padding: 0;
                 margin: 0;
-                
             }
-            h2{
+            h2 {
                 text-transform: uppercase;
                 margin: -10px 0 20px 0;
                 font-size: 1.2rem;
                 font-family: $font2;
-                              
             }
 
-            .planning{
+            .planning {
                 display: flex;
                 column-gap: 30px;
             }
 
-            .planning-left , .planning-center, .planning-right{
+            .planning-left,
+            .planning-center,
+            .planning-right {
                 display: flex;
                 flex-direction: column;
-                gap: 30px;                
+                gap: 30px;
             }
-            input , select , option{
+            input,
+            select,
+            option {
                 border: none;
                 border-bottom: 2px solid rgba(128, 128, 128, 0.204);
                 padding: 10px 0;
                 background: $white1;
             }
 
-            button{
+            button {
                 cursor: pointer;
                 padding: 10px 30px;
                 border-radius: 1000px;
                 padding-bottom: -30px;
-                margin-bottom: 50px;
+                margin-top: 20px;
                 font-family: $font2;
                 text-transform: uppercase;
                 font-size: 1.5rem;
@@ -269,10 +268,122 @@
                 color: $white1;
                 transition: 1s ease-in-out;
 
-                    &:hover{
-                        color: black;
-                        background: white;
-                    }
+                &:hover {
+                    color: black;
+                    background: white;
+                }
+            }
+        }
+    }
+
+    .event {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+
+        .event-top {
+            margin: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+
+            span{
+                color: $orange;
+                font-family: $font1;
+                font-size: 3rem;
+            }
+            h2{
+                color: $white1;
+                font-family: $font2;
+                font-size: 2.5rem;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                margin-top: -25px;
+            }
+        }
+        .event-back{
+            display: grid;
+            grid-template-columns: 60% 40%;
+            grid-template-rows: 1fr 1fr ;
+            grid-template-areas: 
+            "1 3"
+            "2 3";            
+            column-gap: 20px;
+        }
+
+        .card-event{
+            display: grid;
+            grid-template-columns: 40% 60%;
+            margin-bottom: 20px;
+        }
+
+        .part-left-1{
+            background: url(../img/event-01.jpg) center/cover;
+            
+            
+        }
+        
+        .date{
+            padding: 10px;
+            text-align: center;
+            background: $black1;
+            margin: 80px;
+            color: white;       
+                                           
+        }
+
+        .part-left-2{
+            background: url(../img/event-02.jpg) center/cover;
+        }
+    }
+
+    .part-right{
+        background: $white1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 40px;
+        padding: 20px;
+
+        h3{
+            font-family: $font3;
+            font-weight:100;
+        }
+
+        p{
+            color: gray;
+            font-size: 0.8rem;
+        }
+
+        .buy{
+            border: none;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+    }
+
+    .event-back-right{
+        background: url(../img/event-03.jpg) center/cover;
+        margin-bottom: 20px;
+
+        .event-center{
+            margin: 20px;
+            background: $white1;
+
+            .date-right{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background: $black1;
+                margin: 0 140px;
+                padding: 10px 10px;
+                color: $white1;
+                text-align: center;
             }
         }
     }

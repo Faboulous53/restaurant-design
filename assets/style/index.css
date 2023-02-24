@@ -392,7 +392,7 @@ header .home p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 50px;
+  gap: 10px;
 }
 .other .reservation .reservation-right span {
   color: rgb(166, 114, 69);
@@ -415,7 +415,9 @@ header .home p {
      -moz-column-gap: 30px;
           column-gap: 30px;
 }
-.other .reservation .reservation-right .planning-left, .other .reservation .reservation-right .planning-center, .other .reservation .reservation-right .planning-right {
+.other .reservation .reservation-right .planning-left,
+.other .reservation .reservation-right .planning-center,
+.other .reservation .reservation-right .planning-right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -425,7 +427,9 @@ header .home p {
           flex-direction: column;
   gap: 30px;
 }
-.other .reservation .reservation-right input, .other .reservation .reservation-right select, .other .reservation .reservation-right option {
+.other .reservation .reservation-right input,
+.other .reservation .reservation-right select,
+.other .reservation .reservation-right option {
   border: none;
   border-bottom: 2px solid rgba(128, 128, 128, 0.204);
   padding: 10px 0;
@@ -436,7 +440,7 @@ header .home p {
   padding: 10px 30px;
   border-radius: 1000px;
   padding-bottom: -30px;
-  margin-bottom: 50px;
+  margin-top: 20px;
   font-family: poppins, serif;
   text-transform: uppercase;
   font-size: 1.5rem;
@@ -449,4 +453,131 @@ header .home p {
 .other .reservation .reservation-right button:hover {
   color: black;
   background: white;
+}
+.other .event {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.other .event .event-top {
+  margin: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.other .event .event-top span {
+  color: rgb(166, 114, 69);
+  font-family: allura, sans-serif;
+  font-size: 3rem;
+}
+.other .event .event-top h2 {
+  color: rgb(243, 243, 243);
+  font-family: poppins, serif;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: -25px;
+}
+.other .event .event-back {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "1 3" "2 3";
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
+}
+.other .event .card-event {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  margin-bottom: 20px;
+}
+.other .event .part-left-1 {
+  background: url(../img/event-01.jpg) center/cover;
+}
+.other .event .date {
+  padding: 10px;
+  text-align: center;
+  background: rgb(33, 32, 30);
+  margin: 80px;
+  color: white;
+}
+.other .event .part-left-2 {
+  background: url(../img/event-02.jpg) center/cover;
+}
+.other .part-right {
+  background: rgb(243, 243, 243);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 40px;
+  padding: 20px;
+}
+.other .part-right h3 {
+  font-family: roboto, serif;
+  font-weight: 100;
+}
+.other .part-right p {
+  color: gray;
+  font-size: 0.8rem;
+}
+.other .part-right .buy {
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.other .event-back-right {
+  background: url(../img/event-03.jpg) center/cover;
+  margin-bottom: 20px;
+}
+.other .event-back-right .event-center {
+  margin: 20px;
+  background: rgb(243, 243, 243);
+}
+.other .event-back-right .event-center .date-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: rgb(33, 32, 30);
+  margin: 0 140px;
+  padding: 10px 10px;
+  color: rgb(243, 243, 243);
+  text-align: center;
 }/*# sourceMappingURL=index.css.map */
