@@ -297,6 +297,156 @@ header .home p {
 }
 
 .other {
-  width: 70%;
-  margin: 0 auto;
+  width: 60%;
+  margin: 200px auto;
+}
+.other .reservation {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  background: black;
+  color: rgb(243, 243, 243);
+}
+.other .reservation .opening {
+  padding: 20px;
+  margin: 10px;
+  border: dashed 1px white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background: black;
+  color: rgb(243, 243, 243);
+}
+.other .reservation .opening span {
+  color: rgb(166, 114, 69);
+  font-family: allura, sans-serif;
+  font-size: 2rem;
+  padding: 0;
+  margin: 0;
+}
+.other .reservation .opening h2 {
+  text-transform: uppercase;
+  margin: -10px 0 20px 0;
+  font-size: 1.2rem;
+  -webkit-animation: changeColor 3s infinite;
+          animation: changeColor 3s infinite;
+}
+@-webkit-keyframes changeColor {
+  0% {
+    color: white;
+  }
+  30% {
+    color: rgb(166, 114, 69);
+  }
+  70% {
+    color: rgb(166, 114, 69);
+  }
+}
+@keyframes changeColor {
+  0% {
+    color: white;
+  }
+  30% {
+    color: rgb(166, 114, 69);
+  }
+  70% {
+    color: rgb(166, 114, 69);
+  }
+}
+.other .reservation .opening img {
+  margin-bottom: 20px;
+}
+.other .reservation .opening h3 {
+  color: rgb(166, 114, 69);
+  text-transform: uppercase;
+  font-family: poppins, serif;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+.other .reservation .opening p {
+  font-family: poppins, serif;
+  font-size: 0.8rem;
+  margin-bottom: 20px;
+}
+.other .reservation .reservation-right {
+  background: rgb(243, 243, 243);
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 50px;
+}
+.other .reservation .reservation-right span {
+  color: rgb(166, 114, 69);
+  font-family: allura, sans-serif;
+  font-size: 2rem;
+  padding: 0;
+  margin: 0;
+}
+.other .reservation .reservation-right h2 {
+  text-transform: uppercase;
+  margin: -10px 0 20px 0;
+  font-size: 1.2rem;
+  font-family: poppins, serif;
+}
+.other .reservation .reservation-right .planning {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
+}
+.other .reservation .reservation-right .planning-left, .other .reservation .reservation-right .planning-center, .other .reservation .reservation-right .planning-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+}
+.other .reservation .reservation-right input, .other .reservation .reservation-right select, .other .reservation .reservation-right option {
+  border: none;
+  border-bottom: 2px solid rgba(128, 128, 128, 0.204);
+  padding: 10px 0;
+  background: rgb(243, 243, 243);
+}
+.other .reservation .reservation-right button {
+  cursor: pointer;
+  padding: 10px 30px;
+  border-radius: 1000px;
+  padding-bottom: -30px;
+  margin-bottom: 50px;
+  font-family: poppins, serif;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  background: black;
+  color: rgb(243, 243, 243);
+  -webkit-transition: 1s ease-in-out;
+  -o-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+}
+.other .reservation .reservation-right button:hover {
+  color: black;
+  background: white;
 }/*# sourceMappingURL=index.css.map */
