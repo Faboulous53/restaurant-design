@@ -424,4 +424,42 @@
             
         }
     }
+
+    .speech {
+        max-width: 1000px;
+        margin: 100px auto;
+        background: $white1;
+        text-align: center;
+        padding: 0 50px;       
+        position: relative;
+
+        img{
+           border-radius: 3000px;
+           width: 8%; 
+           position: absolute;
+           top:0;
+           left:50%;
+           transform: translate(-50%, -50%);
+        }
+
+        p{
+            font-family: $font3;
+            font-weight: 500;
+            margin: 20px 0;
+            padding-top: 50px;
+            line-height: 2rem;            
+            
+            span{
+                font-size: 1.5rem;
+            }
+        }
+        h2{
+            font-family: $font3;
+            margin-bottom: 20px;
+        }
+        h3{
+            color: $orange;
+            padding-bottom: 50px ;
+        }
+    }   
 }

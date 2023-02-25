@@ -644,4 +644,40 @@ header .home p {
   border: none;
   text-transform: uppercase;
   cursor: pointer;
+}
+.other .speech {
+  max-width: 1000px;
+  margin: 100px auto;
+  background: rgb(243, 243, 243);
+  text-align: center;
+  padding: 0 50px;
+  position: relative;
+}
+.other .speech img {
+  border-radius: 3000px;
+  width: 8%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.other .speech p {
+  font-family: roboto, serif;
+  font-weight: 500;
+  margin: 20px 0;
+  padding-top: 50px;
+  line-height: 2rem;
+}
+.other .speech p span {
+  font-size: 1.5rem;
+}
+.other .speech h2 {
+  font-family: roboto, serif;
+  margin-bottom: 20px;
+}
+.other .speech h3 {
+  color: rgb(166, 114, 69);
+  padding-bottom: 50px;
 }/*# sourceMappingURL=index.css.map */
