@@ -14,6 +14,47 @@ nav {
     justify-content: space-around;
     height: 10vh;
 
+    .nav-mobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        display: none;
+        >*{ 
+            text-align: center;
+            display: block;
+            width: 30px;
+            height: 2px;
+            background: $white1;
+            color: $white1;
+            margin: 3px;
+        }
+    }
+
+    .isactive{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+
+        #none{
+            display: none;
+        }
+
+        >*{ 
+            text-align: center;
+            display: block;
+            width: 30px;
+            height: 2px;
+            background: $white1;
+            color: $white1;
+            margin: 3px;
+            transform: rotate(25deg);
+
+           
+        }
+    }
+
     h3{
         font-family: $font1;
         font-size: 3rem;
